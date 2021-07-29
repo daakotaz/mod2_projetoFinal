@@ -1,0 +1,15 @@
+{% extends 'template.html' %}
+{% block content %}
+    <header>
+        <h1>NOME DA HAMBURGUERIA</h1>
+
+        <nav>
+            <ul>
+                <div action="{{url_for('login')}}" method='GET'><li><a type='submit'>LOGIN</a></li></div>
+                <div><li><a>CADASTRO</a></li></div>
+                <div><li><a>MENU</a></li></div>
+                <div><li><a>EQUIPE</a></li></div>
+            </ul>
+        </nav>
+    </header>
+{% endblock %}

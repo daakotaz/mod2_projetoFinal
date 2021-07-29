@@ -1,0 +1,26 @@
+{% extends 'template.html' %}
+{% block content %}
+    <form action="{{url_for('cliente')}}" method='POST'>
+        <h2>Cadastro de Cliente</h2>
+
+        <label for='nome'>Nome</label>
+        <input type='text' id='nome' name='nome'>
+
+        <label for='email'>E-mail</label>
+        <input type='text' id='email' name='email'>
+
+        <label for='senha'>Senha</label>
+        <input type='text' id='senha' name='senha'>
+
+        <div>
+            <label>Formas de Pagamento</label>
+            <label for='dinheiro'>Dinheiro</label>
+            <input type='checkbox' id='dinheiro' name='pagamento' value='dinheiro'>
+
+            <label for='cartao'>Cartão</label>
+            <input type='checkbox' id='cartao' name='pagamento' value='cartao'>
+        </div>
+
+        <input type="submit" value='CONCLUIR'>
+    </form>
+{% endblock %}
