@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
+body, html{
+    height: 100%;
+    font-family:  sans-serif;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    }
+
+/* INTRODUÇÃO */
+
+.image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/one.jpg");
+  height: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.img-text {
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.txtum{
+ font-family: "Noto Sans JP";
+}
+
+.txtdois{
+  font-family: "Noto Sans JP";
+}
+
+/* FIM INTRODUÇÃO */
+
+/* SCROLLMENU */
+
+div.scrollmenu {
+    background-color: rgb(0, 0, 0);
+    overflow: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  div.scrollmenu a:hover {
+    background-color: #777;
+  }
+
+  .order {
+    font-family: "Noto Sans JP";
+    color: rgb(255, 255, 255);
+}
+/* SCROLLMENU */
+ 
+/* MENU SLIDER */
+.menu {
+width: 100%;
+height:10vh;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 15px;
+text-transform: uppercase;
+letter-spacing: 4px;
+background-color: rgba(200, 229, 230, 0.952);
+ }
+
+#slider {
+  overflow: hidden;
+ }
+
+ #slider figure {
+  position: relative;
+  width: 200%;
+ 
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+
+ }
+ #slider figure img {
+   width: 20%;
+   float: left;
+ }
+
+ @keyframes slider {
+   0% {
+     left: 0;
+   }
+   20% {
+    left: 0;
+  }
+
+  20% {
+    left: -100%;
+  }
+}
+
+/* FIM MENU SLIDER */
+
+/* PEDIDOS */
+
+.pedidos{
+width: 100%;
+height:10vh;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 15px;
+text-transform: uppercase;
+letter-spacing: 4px;
+background-color: rgba(200, 229, 230, 0.952);
+
+ }
+form{  
+  text-align: center;
+  /* font-color: #fff; */
+  }
+
+  table{
+  align-self: center;
+  line-height: 20px;
+  color: white;
+}
+
+td{
+  font-weight: bold;
+}
+
+input{
+  font-weight: bold;
+  align-self: right;
+}
+
+/* FIM PEDIDOS */
+
+/* FOOTER */
+
+.footer{
+  width: 100%;
+  height:10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-family: "Noto Sans JP";
+  }
